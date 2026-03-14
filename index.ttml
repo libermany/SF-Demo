@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Salesforce • Genesys • ITNAVPro</title>
+  <style>
+    :root {
+      --bg1: #0f172a;
+      --bg2: #111827;
+      --card: rgba(255, 255, 255, 0.9);
+      --text: #0f172a;
+      --muted: #475569;
+      --ring: rgba(255, 255, 255, 0.15);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: white;
+      background:
+        radial-gradient(circle at top left, rgba(59,130,246,0.35), transparent 28%),
+        radial-gradient(circle at top right, rgba(168,85,247,0.28), transparent 25%),
+        linear-gradient(135deg, var(--bg1), var(--bg2));
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 32px;
+    }
+
+    .wrap {
+      width: 100%;
+      max-width: 1100px;
+    }
+
+    .hero {
+      text-align: center;
+      margin-bottom: 28px;
+    }
+
+    .hero h1 {
+      margin: 0 0 10px;
+      font-size: clamp(2rem, 4vw, 3.2rem);
+      line-height: 1.1;
+      letter-spacing: -0.03em;
+    }
+
+    .hero p {
+      margin: 0 auto;
+      max-width: 760px;
+      font-size: 1.05rem;
+      color: rgba(255,255,255,0.82);
+      line-height: 1.6;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--ring);
+      border-radius: 22px;
+      padding: 26px;
+      box-shadow: 0 18px 45px rgba(0,0,0,0.24);
+      text-align: center;
+      color: var(--text);
+      min-height: 230px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .logo-box {
+      width: 100%;
+      height: 96px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px;
+    }
+
+    .logo-box img {
+      max-width: 100%;
+      max-height: 76px;
+      object-fit: contain;
+      display: block;
+    }
+
+    .card h2 {
+      margin: 0;
+      font-size: 1.15rem;
+    }
+
+    .card p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.5;
+      font-size: 0.96rem;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 22px;
+      color: rgba(255,255,255,0.72);
+      font-size: 0.92rem;
+    }
+
+    @media (max-width: 640px) {
+      body { padding: 20px; }
+      .card { min-height: 200px; }
+      .logo-box { height: 82px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <h1>Technology Partners</h1>
+      <p>
+        A simple landing page featuring Salesforce, Genesys, and ITNAVPro.
+      </p>
+    </section>
+
+    <section class="grid" aria-label="Partner logos">
+      <article class="card">
+        <div class="logo-box">
+          <img
+            src="https://www.salesforce.com/news/wp-content/uploads/sites/3/2021/05/Salesforce-logo.jpg"
+            alt="Salesforce logo"
+            loading="eager"
+          />
+        </div>
+        <h2>Salesforce</h2>
+        <p>CRM and customer platform</p>
+      </article>
+
+      <article class="card">
+        <div class="logo-box">
+          <img
+            src="https://www.genesys.com/wp-content/themes/genesys-kraken/logo/genesys-com-full-color.svg"
+            alt="Genesys logo"
+            loading="eager"
+          />
+        </div>
+        <h2>Genesys</h2>
+        <p>Customer experience and contact center platform</p>
+      </article>
+
+      <article class="card">
+        <div class="logo-box">
+          <img
+            src="https://www.tikshoov.co.il/warehouse/dynamic/287415.png"
+            alt="ITNAVPro logo"
+            loading="eager"
+          />
+        </div>
+        <h2>ITNAVPro</h2>
+        <p>Integration and contact center technology partner</p>
+      </article>
+    </section>
+
+    <div class="footer">Built as a single standalone HTML file.</div>
+  </main>
+</body>
+</html>
